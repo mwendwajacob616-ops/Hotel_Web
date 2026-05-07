@@ -13,6 +13,7 @@ nav{
     gap: 10px;
 }
 nav a{
+    justify-content: center;
     color:rgb(158, 39, 49);
     text-decoration: none;
     margin-right: 50px;
