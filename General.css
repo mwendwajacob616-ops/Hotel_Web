@@ -7,7 +7,10 @@ body{
 }
 nav{
     background-color: #9595c6;
-    padding: 7px;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
 }
 nav a{
     color:rgb(158, 39, 49);
@@ -25,11 +28,12 @@ nav a:active{
 .gallery{
     display: flex;
     flex-wrap: wrap;
-    gap:15px;
+    gap: 10px;
 }
 .gallery img{
-    width:48%;
+    width:200px;
     height:auto;
+    justify-content: center;
 }
 h1{
     text-align: center;
