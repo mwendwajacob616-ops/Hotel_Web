@@ -79,12 +79,19 @@ button{
 button:hover{
     background-color: rgb(64, 8, 246);
 }
+input[type="submit"]{
+    background-color:rgb(146, 149, 188);
+    radius: 5px;
+    border-color: rgb(81, 87, 167);
+}
 input{
+    display: flex;
+    flex-direction: column;
     font-size: medium;
     border-width: 2px;
     border-color: rgb(59, 59, 73);
     border-radius: 5px;
-    background-color: rgb(253, 253, 254);
+    background-color: rgb(235, 235, 244);
     margin-bottom: 15px;
     margin-top: 15px;
     margin-left: 50px;
