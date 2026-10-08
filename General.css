@@ -61,10 +61,7 @@ h1{
     opacity:0;
     animation: fadeup 1.5s ease forwards;
     animation-delay: 0.5s;
-    width: 95%;
-    margin: auto;
-    letter-spacing: 2px;
-    word-spacing: 3px;
+    margin: 20px auto 15px;
     font-size: 22px;
     white-space: nowrap;
 }
@@ -81,18 +78,18 @@ h2{
     margin-bottom: 35px;
     letter-spacing: 2px;
     word-spacing: 3px;
-    width: 80%;
     margin: 20px auto 15px;
+    font-weight: bold;
 }
 h3{
-     text-shadow: 2px 2px 5px red;
+    text-shadow: 2px 2px 5px red;
     box-shadow: 4px 4px 5px red;
     margin-top: 35px;
     margin-bottom: 35px;
     letter-spacing: 2px;
     word-spacing: 3px;
-    width: 80%;
     margin: 20px auto 15px;
+    font-weight: bold;
 }
 button{
     border-radius: 5px;
@@ -115,8 +112,7 @@ h4{
     word-spacing: 3px;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: larger;
-    width: 80%;
+    font-weight: bold;
     margin: 20px auto 15px;
 }
 .about{
@@ -152,9 +148,10 @@ h4{
     text-align: center;
     line-height: 1.8;
     word-spacing: 3px;
+    margin-bottom: 50px;
 }
 .form{
-    background-color: #4f4646;
+    background-color: #222;
     padding: 50px 60px;
     text-align: center;
     line-height: 1.8;
