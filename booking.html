@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en=US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Visit Sabaki Five Star Hotel today in Nairobi offering affordable luxury rooms, free wi-fi, and excellent customer service. Book your stay today">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="2-island.webp">
+        <link rel="stylesheet" href="General.css">
+        <title>Sabaki Five Star Hotel</title>
+    </head>
+    <body>
+        <h1>SABAKI FIVE STAR HOTEL</h1>
+        <header>
+        <nav>
+           <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Contacts.html">Contacts</a>
+            <a href="booking.html">Booking</a>
+        </nav>
+        </header>
+        <h4>"Comfort in the heart of Nairobi"</h4>
+
+<form id="bookingForm">
+
+    <h2>Book Your Stay</h2>
+    <p>Complete the form below to request your reservation.</p>
+    <h3>Guest Information</h3>
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="e.g. 0712345678" required>
+    <h3>Reservation Details</h3>
+    <label for="checkin">Check-in Date:</label>
+    <input type="date" id="checkin" name="checkin" required>
+    <label for="checkout">Check-out Date:</label>
+    <input type="date" id="checkout" name="checkout" required>
+    <label for="guests">Number of Guests:</label>
+    <select id="guests" name="guests" required>
+        <option value="">Select number of guests</option>
+        <option value="1">1 Guest</option>
+        <option value="2">2 Guests</option>
+        <option value="3">3 Guests</option>
+        <option value="4">4 Guests</option>
+        <option value="5">5 Guests</option>
+        <option value="6">6 Guests</option>
+        </select>
+    <label for="room">Room Type:</label>
+    <select id="room" name="room" required>
+        <option value="">Choose a room</option>
+        <option value="Standard">Standard Room</option>
+        <option value="Deluxe">Deluxe Room</option>
+        <option value="Executive">Executive Suite</option>
+        <option value="Family">Family Room</option>
+    </select>
+    <label for="requests">Special Requests:</label>
+    <textarea
+        id="requests"
+        name="requests"
+        placeholder="Any special requirements? (Optional)"rows="4"
+    ></textarea>
+    <button type="submit">Submit Booking Request</button>
+
+</form>
+</body>
+</html>
