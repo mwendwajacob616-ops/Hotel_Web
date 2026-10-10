@@ -61,6 +61,11 @@ body{
 .hero .button:hover {
     background-color: #e68a00;
 }
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 nav{
     display: flex;
     justify-content: center;
@@ -73,9 +78,6 @@ nav{
     gap: 40px;
     margin-bottom: 40px;
     margin-top: 40px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 nav a{
     justify-content: center;
@@ -320,7 +322,7 @@ body.about-page h2{
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.4s ease;
 }
 .form-container input[type="submit"]:hover {
     background-color: #e68a00;
@@ -396,7 +398,7 @@ body.about-page h2{
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.4s ease;
 }
 
 #bookingForm button:hover {
