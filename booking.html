@@ -63,5 +63,45 @@
     <button type="submit">Submit Booking Request</button>
 
 </form>
+<script>
+    const bookingForm = document.getElementById("bookingForm");
+    const checkin = document.getElementById("checkin");
+    const checkout = document.getElementById("checkout");
+
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2, "0");
+    const day = String(today.getDate()).padStart(2, "0");
+
+    const todayDate = `${year}-${month}-${day}`;
+
+    checkin.min = todayDate;
+    checkin.addEventListener("change", () => {
+        checkout.min = checkin.value;
+        if (checkout.value && checkout.value < checkin.value) {
+            checkout.value = "";
+        }
+    });
+
+    bookingForm.addEventListener("submit", function (event){
+        event.preventDefault();
+        if (!bookingForm.checkValidity()) {
+            bookingForm.reportValidity();
+            return;
+        }
+        if(checkout.value <= checkin.value) {
+            alert("Check-out date must be after check-in date.");
+            return;
+        }
+        alert("Thank for choosing Sabaki Five Star Hotel. Your booking request has been submitted successfully!\n\n" +
+            "Please contact us for confirmation. We look forward to welcoming you soon!"
+        );
+        bookingForm.reset();
+
+        checkin.min = todayDate;
+        checkout.min = todayDate;
+    })
+
+</script>
 </body>
 </html>
