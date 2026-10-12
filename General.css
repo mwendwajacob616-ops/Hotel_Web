@@ -115,9 +115,9 @@ h1{
     margin-bottom: 45px;
     opacity:0;
     animation: fadeup 1.5s ease forwards;
-    animation-delay: 0.5s;
+    animation-delay: 0.4s;
     margin: 20px auto 15px;
-    font-size: 22px;
+    font-size: 20px;
     white-space: nowrap;
 }
 @keyframes fadeup{
