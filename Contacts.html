@@ -33,10 +33,10 @@
         </ul>
         </section>
         
-        <section class="form" id="contactForm">
+        <section class="form">
         <h2>Contact Form</h2>
         <div class="form-container">
-        <form>
+        <form id="contactForm">
         <input type="text" placeholder="Enter your name" required id="name"/>
         <input type="email" name="email" placeholder="Enter your Email" required id="email"/>
         <textarea rows="10" columns="30" placeholder="Your Message" required id="message"></textarea>
@@ -52,13 +52,13 @@
             &copy;2026 SABAKI FIVE STAR HOTEL. All Rights Reserved.
         </footer>
         <script>
-            const contactForm = document.getElementById("contactForm");
+const contactForm = document.getElementById("contactForm");
 const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
 const contactMessage = document.getElementById("contactMessage");
 contactForm.addEventListener('submit', function(event) {
     event.preventDefault();
-    contactMessage.textContent = "Thank you " + nameInput.value + " for choosing Sabaki Hotel, we will get back to you  via " + emailInput.value + ".";
+    alert("Thank you " + nameInput.value + " for choosing Sabaki Hotel, we will get back to you  via " + emailInput.value + ".");
     contactMessage.style.color = "green";
     contactForm.reset();
 });
